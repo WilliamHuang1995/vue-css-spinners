@@ -1,3 +1,14 @@
 {
-  "extends": "standard"
+  "extends": [
+    "plugin:vue/essential",
+    "@vue/standard"
+  ],
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "rules": {},
+  "parserOptions": {
+    "parser": "babel-eslint"
+  }
 }

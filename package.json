@@ -2,47 +2,26 @@
   "name": "vue-css-spinners",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "rollup -c",
-    "lint": "eslint **/*.js",
-    "lint:fix": "prettier-eslint **/*.js --write",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "npm run lint:fix",
-      "git add"
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/WilliamHuang1995/vue-css-spinners.git"
-  },
-  "keywords": [
-    "vue",
-    "css",
-    "spinners"
-  ],
   "author": "William Huang",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/WilliamHuang1995/vue-css-spinners/issues"
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "vue-cli-service lint",
+    "lint:fix": "prettier-eslint **/*.js --write",
+    "prebuild": "rimraf dist"
   },
-  "homepage": "https://github.com/WilliamHuang1995/vue-css-spinners#readme",
+  "main": "index.js",
   "devDependencies": {
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-node": "^9.0.1",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^5.0.0",
     "husky": "^2.2.0",
     "lint-staged": "^8.1.6",
     "prettier-eslint": "^8.8.2",
@@ -52,5 +31,30 @@
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-node-resolve": "^4.2.4",
     "rollup-plugin-terser": "^4.0.4"
+  },
+  "bugs": {
+    "url": "https://github.com/WilliamHuang1995/vue-css-spinners/issues"
+  },
+  "homepage": "https://github.com/WilliamHuang1995/vue-css-spinners#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "keywords": [
+    "vue",
+    "css",
+    "spinners"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:fix",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilliamHuang1995/vue-css-spinners.git"
   }
 }
