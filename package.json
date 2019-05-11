@@ -10,9 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/WilliamHuang1995/vue-css-spinners.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["vue", "css", "spinners"],
+  "author": "William Huang",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/WilliamHuang1995/vue-css-spinners/issues"
   },
