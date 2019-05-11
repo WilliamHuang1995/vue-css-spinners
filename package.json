@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
     "lint": "eslint **/*.js",
     "lint:fix": "prettier-eslint **/*.js --write",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -44,6 +46,11 @@
     "husky": "^2.2.0",
     "lint-staged": "^8.1.6",
     "prettier-eslint": "^8.8.2",
-    "prettier-eslint-cli": "^4.7.1"
+    "prettier-eslint-cli": "^4.7.1",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.11.3",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-node-resolve": "^4.2.4",
+    "rollup-plugin-terser": "^4.0.4"
   }
 }
