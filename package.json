@@ -8,6 +8,17 @@
     "lint:fix": "prettier-eslint **/*.js --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:fix",
+      "git add"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WilliamHuang1995/vue-css-spinners.git"
@@ -30,6 +41,8 @@
     "eslint-plugin-node": "^9.0.1",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
+    "husky": "^2.2.0",
+    "lint-staged": "^8.1.6",
     "prettier-eslint": "^8.8.2",
     "prettier-eslint-cli": "^4.7.1"
   }
